@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  flex: 1;
+}
+
+h2 {
+  color: #333;
+}
+
+#movie-detail {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#pagination button {
+  min-width: 80px;
+}
+
+footer {
+  background-color: #f1f1f1;
+}

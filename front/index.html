@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>电影列表</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <section>
+      <h2>热门电影</h2>
+      <input type="text" id="search-box" class="form-control mb-4" placeholder="搜索电影">
+      <ul id="movie-list" class="list-group"></ul>
+      <div id="pagination" class="mt-4 d-flex justify-content-center align-items-center flex-wrap">
+        <button id="first-page" class="btn btn-secondary me-2">« 第一页</button>
+        <button id="prev-page" class="btn btn-secondary me-2">上一页</button>
+        <span id="page-indicator" class="me-2"></span>
+        <button id="next-page" class="btn btn-secondary ms-2">下一页</button>
+        <button id="last-page" class="btn btn-secondary ms-2">最后一页 »</button>
+        <input type="number" id="page-input" class="form-control ms-3" min="1" placeholder="页码" style="width: 80px;">
+        <button id="jump-btn" class="btn btn-primary ms-2">跳转</button>
+      </div>
+    </section>
+
+    <section id="movie-detail" class="card mt-4 p-4" style="display: none;">
+      <h3 class="card-title" id="detail-title"></h3>
+      <p><strong>导演:</strong> <span id="detail-director"></span></p>
+      <p><strong>评分:</strong> <span id="detail-rating"></span></p>
+      <p><strong>简介:</strong> <span id="detail-description"></span></p>
+      <button id="back-to-list" class="btn btn-primary">返回列表</button>
+    </section>
+  </div>
+
+  <footer class="text-center mt-5 py-3 text-muted border-top">
+    © 2025 电影资源展示系统
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
